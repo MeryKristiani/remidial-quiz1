@@ -13,8 +13,9 @@ public class MainRemidi {
         Pembeli p2 = new Pembeli("Griselda", "3505157535");
         Kamera merk = new Kamera("Fujifilm X-A5", p2);
         System.out.println(merk.info());
-        Transaksi kamera = new Transaksi();
+        Transaksi kamera = new Transaksi(8999000, 0.15f);
         kamera.setHarga(8999000);
+        kamera.setDiskon(0.15f);
         kamera.info();
     }
 }
